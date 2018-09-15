@@ -20,6 +20,7 @@ function draw() {
   background(0, 0, 0);
 
   bug.move();
+  //center squarea
   var c = color(180,20,20);
   var d = dist(bug.x, bug.y, bg.target[0], bg.target[1]);
   current_t = second();
@@ -57,7 +58,9 @@ function Map() {
 
   this.display = function(co) {
     for (var i = 0; i < this.elt.length; i++) {
+      //[i][5]all white for the rest 2, idk.
       fill(color(this.elt[i][3], 20, 20));
+      //variable value of boxes square
       var r = this.elt[i][3] / 150.0;
       rect( r * (this.elt[i][0] - bug.x + width / 2), r*(this.elt[i][1] - bug.y + height / 2), this.elt[i][2], this.elt[i][2]);
     }
