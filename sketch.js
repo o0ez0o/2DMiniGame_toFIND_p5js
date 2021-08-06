@@ -9,7 +9,7 @@ var idx;
 //   // img = loadImage('aaa');
 // }
 function setup() {
-  createCanvas(1900, 500);
+  createCanvas(1000, 650);
   bg = new Map();
   bug = new Siren();
   last_t = second();
